@@ -14,51 +14,38 @@
 			<ac:parameter ac:name="width">50%</ac:parameter>
 			<ac:rich-text-body>
 				<p>
-					<ac:placeholder>Jira Vorg&auml;nge mit Hilfe des Filters ausw&auml;hlen.&#013;&#010;Falls es keinen passenden Vorgang gibt &rarr; Jira Makro l&ouml;schen!</ac:placeholder>
+					<ac:placeholder>Jira Vorg&auml;nge mit Hilfe des Filters ausw&auml;hlen. Falls es keinen passenden Vorgang gibt &rarr; Jira Makro l&ouml;schen!</ac:placeholder>
 				</p>
 				<p>
 					<ac:structured-macro ac:name="jira" ac:schema-version="1" ac:macro-id="53dea4b4-99d9-471b-a255-ff55563792cd">
 						<ac:parameter ac:name="server">Infogate</ac:parameter>
 						<ac:parameter ac:name="columns">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter>
 						<ac:parameter ac:name="serverId">98611999-0db4-3cfd-af7f-0319ccbe5c74</ac:parameter>
-						<ac:parameter ac:name="key"></ac:parameter>
+						<ac:parameter ac:name="key">INFOGATE-2264</ac:parameter>
 					</ac:structured-macro>
 				</p>
 			</ac:rich-text-body>
 		</ac:structured-macro>
 	</ac:rich-text-body>
 </ac:structured-macro>
-<h1>Anforderungen</h1>
+<h1>Beschreibung</h1>
 <p>
-	<ac:placeholder>Hier k&ouml;nnen beliebig viele Anforderungen definiert werden.</ac:placeholder>
-</p>
-<h2>Anforderung 1</h2>
-<p>
-	<ac:placeholder>Beschreibung der Anforderung.</ac:placeholder>
-</p>
-<h2>Anforderung 2</h2>
-<p>
-	<ac:placeholder>Beschreibung der Anforderung.</ac:placeholder>
+	<ac:placeholder>Kurze Beschreibung der Utility-Klasse.</ac:placeholder>
 </p>
 <hr />
-<h1>Konzept</h1>
+<h1>Methoden</h1>
 <p>
-	<ac:placeholder>Optional: Das Konzept erl&auml;utern, sofern es eines gibt.</ac:placeholder>
+	<ac:placeholder>Dokumentation von wichtigen Methoden.</ac:placeholder>
 </p>
-<hr />
-<h1>Realisierung</h1>
 <p>
-	<ac:placeholder>Probleme und Herausforderungen bei der Implementierung!
-					Auf Besonderheiten und wichtige Punkte der Implementierung hinweisen.
-					Nicht jede Methode beschreiben, das hier ist keine API Dokumentation!</ac:placeholder>
+	<ac:placeholder>Optional: Ggf. die Verwendung der Utility anhand von kurzen Code Snippets verdeutlichen. Nicht die Implementierung der Methoden kopieren!</ac:placeholder>
 </p>
-<p><ac:placeholder>F&uuml;r Codebeispiele bitte einen Codeblock verwenden.</ac:placeholder></p>
 <ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="4297eac1-1445-415e-8ae6-2d6144e1c437">
 	<ac:parameter ac:name="language">c#</ac:parameter>
 	<ac:parameter ac:name="linenumbers">true</ac:parameter>
 	<ac:parameter ac:name="collapse">true</ac:parameter>
 </ac:structured-macro>
-<h2>SpezInit</h2>
+<h1>SpezInit</h1>
 <p>
-	<ac:placeholder>Wurden SpezInit verwendet? Wenn ja, welche und warum. Kurze Beschreibung sollte reichen.</ac:placeholder>
+	<ac:placeholder>Haben irgendwelche SpezInit-Schl&uuml;ssel eine Auswirkung auf die Funktionsweise der Utility? Wenn ja, welche und warum. Kurze Beschreibung sollte reichen.</ac:placeholder>
 </p>

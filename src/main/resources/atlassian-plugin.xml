@@ -166,4 +166,53 @@
 		<resource name="icon" type="download" location="/images/myblueprint.png" />
 		<param name="blueprintKey" value="feature-blueprint" />
 	</web-item>
+
+
+	<!-- Blueprint: Utility -->
+	<!-- add our web resources -->
+	<web-resource key="utility-resources" name="Utility: Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="utility.css" location="/css/utility.css"/>
+		<resource type="download" name="utility.js" location="/js/utility.js"/>
+		<resource type="download" name="utility.soy.js" location="/soy/utility.soy"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="utility-template" template-title-key="infogate.utilityblueprint.template.title">
+		<resource name="template" type="download" location="/templates/utility.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="utility-blueprint" how-to-use-template="Infogate.Blueprints.Utility.letsGetStarted" i18n-index-title-key="infogate.utilityblueprint.indextitle" index-key="utility-blueprint-index">
+	    <content-template ref="utility-template" />
+		<dialog-wizard key="utility-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Blueprints.Utility.page1Form"
+						 title-key="infogate.utilityblueprint.wizard.page1.title"
+						 description-header-key="infogate.utilityblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.utilityblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-utility-template" i18n-name-key="infogate.utilityblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.utilityblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<param name="blueprintKey" value="utility-blueprint" />
+	</web-item>
 </atlassian-plugin>

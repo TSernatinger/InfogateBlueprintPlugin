@@ -1,0 +1,23 @@
+{namespace Infogate.Blueprints.Form}
+
+/**
+ * Let's-get-started page for the Create dialog.
+ */
+{template .letsGetStarted}
+    <h2>{getText('infogate.formblueprint.letsgetstarted.title')}</h2>
+    <p>{getText('infogate.formblueprint.letsgetstarted.content')}</p>
+{/template}
+
+/**
+*  A form for Page 1
+*/
+{template .page1Form}
+    <form action="#" method="post" class="aui">
+      <fieldset>
+        <div class="field-group">
+            <label for="vformclass">{getText('infogate.formblueprint.form.label.vFormClass')}</label>
+            <input id="vformclass" class="text" type="text" name="vFormClass">
+        </div>
+      </fieldset>
+    </form>
+{/template}

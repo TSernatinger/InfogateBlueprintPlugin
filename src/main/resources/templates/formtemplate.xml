@@ -1,0 +1,52 @@
+<ac:structured-macro ac:name="section" ac:schema-version="1" ac:macro-id="4e0b4370-a1f3-424e-bd52-0e642d8be8c8">
+	<ac:rich-text-body>
+		<ac:structured-macro ac:name="column" ac:schema-version="1" ac:macro-id="39c88fff-4796-45d5-8ac0-b7718e5b217d">
+		<ac:parameter ac:name="width">50%</ac:parameter>
+		<ac:rich-text-body>
+			<p><ac:structured-macro ac:name="toc" ac:schema-version="1" ac:macro-id="110d1eb8-870b-4ccb-ad25-b6a76da7e40c">
+				<ac:parameter ac:name="style">disc </ac:parameter>
+			</ac:structured-macro></p>
+		</ac:rich-text-body>
+		</ac:structured-macro>
+		<ac:structured-macro ac:name="column" ac:schema-version="1" ac:macro-id="8b2c6439-51e9-4a1d-85c8-dd0241e1e150">
+			<ac:parameter ac:name="width">50%</ac:parameter>
+				<ac:rich-text-body>
+					<p><ac:placeholder>Jira Vorg&auml;nge mit Hilfe des Filters ausw&auml;hlen.&#013;&#010;Falls es keinen passenden Vorgang gibt &rarr; Jira Makro l&ouml;schen!</ac:placeholder></p>
+					<p><ac:structured-macro ac:name="jira" ac:schema-version="1" ac:macro-id="53dea4b4-99d9-471b-a255-ff55563792cd">
+							<ac:parameter ac:name="server">Infogate</ac:parameter>
+							<ac:parameter ac:name="columns">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter>
+							<ac:parameter ac:name="serverId">98611999-0db4-3cfd-af7f-0319ccbe5c74</ac:parameter>
+						<ac:parameter ac:name="key"></ac:parameter>
+					</ac:structured-macro></p>
+			</ac:rich-text-body>
+		</ac:structured-macro>
+	</ac:rich-text-body>
+</ac:structured-macro>
+<p><span><ac:placeholder>Optional: Screenshot des Fensters als &Uuml;bersicht</ac:placeholder></span></p>
+<h1>Anforderungen</h1>
+		<p><ac:placeholder>Hier k&ouml;nnen beliebig viele Anforderungen definiert werden.</ac:placeholder></p>
+<h2>Anforderung 1</h2>
+	<p><ac:placeholder>Beschreibung der Anforderung.</ac:placeholder></p>
+<h2>Anforderung 2</h2>
+	<p><ac:placeholder>Beschreibung der Anforderung.</ac:placeholder></p>
+<hr />
+<h1>Konzept</h1>
+	<p><ac:placeholder>Optional: Das Konzept erl&auml;utern, sofern es eines gibt.</ac:placeholder></p>
+<hr />
+<h1>Realisierung</h1>
+	<p><ac:placeholder>Probleme und Herausforderungen bei der Implementierung!
+					   Auf Besonderheiten und wichtige Punkte der Implementierung hinweisen.
+					   Nicht jede Methode beschreiben, das hier ist keine API Dokumentation!</ac:placeholder></p>
+	<p><ac:placeholder>F&uuml;r Codebeispiele bitte einen Codeblock verwenden.</ac:placeholder></p>
+	<ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="4297eac1-1445-415e-8ae6-2d6144e1c437">
+		<ac:parameter ac:name="language">c#</ac:parameter>
+		<ac:parameter ac:name="linenumbers">true</ac:parameter>
+		<ac:parameter ac:name="collapse">true</ac:parameter>
+	</ac:structured-macro>
+<h2>SpezInit</h2>
+	<p><ac:placeholder>Wurden SpezInit verwendet? Wenn ja, welche und warum. Kurze Beschreibung sollte reichen.</ac:placeholder></p>
+<h2>UserControls</h2>
+	<p><ac:placeholder>
+		Verweise auf verwendete UserControls.&#013;&#010;
+		Die Beschreibung der UserControls selbst findet auf einer separaten Seite statt!
+	</ac:placeholder></p>

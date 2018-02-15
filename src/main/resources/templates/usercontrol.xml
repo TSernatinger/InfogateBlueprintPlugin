@@ -29,7 +29,7 @@
 	</ac:rich-text-body>
 </ac:structured-macro>
 <p>
-	<span><ac:placeholder>Optional: Screenshot des Forms als &Uuml;bersicht</ac:placeholder></span>
+	<span><ac:placeholder>Optional: Screenshot des UserControls als &Uuml;bersicht</ac:placeholder></span>
 </p>
 <h1>Anforderungen</h1>
 <p>
@@ -66,13 +66,13 @@
 	<ac:placeholder>Bitte folgende Labels zur ContentReportTable hinzuf&uuml;gen:
 		<ul>
 			<li>Verwendete SpezInit-Schl&uuml;ssel (z.B. unlinkTel)</li>
-			<li>Forms/UCs, welche in diesem Form verwendet werden</li>
-			<li>Forms, von welchen dieses Form aufgerufen wird</li>
+			<li>UCs, welche in diesem UserControl verwendet werden</li>
+			<li>Forms, in welchen dieses UserControl verwendet wird</li>
 		</ul>
 	</ac:placeholder>
 </p>
 <p>
 	<ac:structured-macro ac:name="content-report-table" ac:schema-version="1" ac:macro-id="3773f884-21e6-4cc9-b95a-73a11c381adf">
-		<ac:parameter ac:name="labels"><at:var at:name="vFormClass"/></ac:parameter>
+		<ac:parameter ac:name="labels"><at:var at:name="vUserControlClass"/></ac:parameter>
 	</ac:structured-macro>
 </p>

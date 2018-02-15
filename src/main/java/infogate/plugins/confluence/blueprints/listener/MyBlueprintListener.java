@@ -26,6 +26,7 @@ public class MyBlueprintListener {
 		Arrays.asList(
 			pluginKey + ":" + "my-blueprint",
 			pluginKey + ":" + "form-blueprint",
+			pluginKey + ":" + "usercontrol-blueprint",
 			pluginKey + ":" + "feature-blueprint",
 			pluginKey + ":" + "utility-blueprint"
 		)
@@ -51,11 +52,11 @@ public class MyBlueprintListener {
 	public void onBlueprintCreateEvent(BlueprintPageCreateEvent event) {
 		ContentBlueprint blueprint = event.getBlueprint();
 		String moduleCompleteKey = blueprint.getModuleCompleteKey();
-		log.warn("moduleCompleteKey: " + moduleCompleteKey);
+		//log.warn("moduleCompleteKey: " + moduleCompleteKey);
 
 		if (keys.contains(moduleCompleteKey)) {
 			Page page = event.getPage();
-			log.warn("Add label: " + page.getTitle());
+			//log.warn("Add label: " + page.getTitle());
 			labelManager.addLabel((Labelable) page, new Label(page.getTitle()));
 		}
 	}

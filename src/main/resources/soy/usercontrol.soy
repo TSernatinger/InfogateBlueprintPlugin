@@ -1,0 +1,23 @@
+{namespace Infogate.Blueprints.UserControl}
+
+/**
+ * Let's-get-started page for the Create dialog.
+ */
+{template .letsGetStarted}
+    <h2>{getText('infogate.usercontrolblueprint.letsgetstarted.title')}</h2>
+    <p>{getText('infogate.usercontrolblueprint.letsgetstarted.content')}</p>
+{/template}
+
+/**
+*  A form for Page 1
+*/
+{template .page1Form}
+    <form action="#" method="post" class="aui">
+      <fieldset>
+        <div class="field-group">
+            <label for="vusercontrolclass">{getText('infogate.usercontrolblueprint.form.label.vUserControlClass')}</label>
+            <input id="vusercontrolclass" class="text" type="text" name="vUserControlClass">
+        </div>
+      </fieldset>
+    </form>
+{/template}

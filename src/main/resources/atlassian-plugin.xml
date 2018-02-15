@@ -9,6 +9,9 @@
 
 	<!-- add our i18n resource -->
 	<resource type="i18n" name="i18n" location="simplebp"/>
+	
+	<!-- Listener -->
+	<listener name="My Blueprint-Listener" key="myblueprintlistener" class="infogate.plugins.confluence.blueprints.listener.MyBlueprintListener"/>
 
 	<!-- Blueprint: TEST -->
 	<!-- add our web resources -->
@@ -58,8 +61,6 @@
 						 last="true"/>
 	    </dialog-wizard>
 	</blueprint>
-	
-	<listener name="My Blueprint-Listener" key="myblueprintlistener" class="infogate.plugins.confluence.blueprints.listener.MyBlueprintListener"/>
 
 	<!-- Add to the Create Menu -->
 	<web-item key="create-by-sample-template" i18n-name-key="my.create-link.title" section="system.create.dialog/content">
@@ -116,6 +117,56 @@
 		<description key="infogate.formblueprint.create-link.description" />
 		<resource name="icon" type="download" location="/images/myblueprint.png" />
 		<param name="blueprintKey" value="form-blueprint" />
+	</web-item>
+
+
+	<!-- Blueprint: UserControl -->
+	<!-- add our web resources -->
+	<web-resource key="usercontrol-resources" name="UserControl: Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="usercontrol.css" location="/css/usercontrol.css"/>
+		<resource type="download" name="usercontrol.js" location="/js/usercontrol.js"/>
+		<resource type="download" name="usercontrol.soy.js" location="/soy/usercontrol.soy"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="usercontrol-template" i18n-name-key="infogate.usercontrolblueprint.template.title">
+		<resource name="template" type="download" location="/templates/usercontrol.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="usercontrol-blueprint" i18n-name-key="" how-to-use-template="Infogate.Blueprints.UserControl.letsGetStarted"
+			   i18n-index-title-key="infogate.usercontrolblueprint.indextitle" index-key="usercontrol-blueprint-index">
+	    <content-template ref="usercontrol-template" />
+		<dialog-wizard key="usercontrol-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Blueprints.UserControl.page1Form"
+						 title-key="infogate.usercontrolblueprint.wizard.page1.title"
+						 description-header-key="infogate.usercontrolblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.usercontrolblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-usercontrol-template" i18n-name-key="infogate.usercontrolblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.usercontrolblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<param name="blueprintKey" value="usercontrol-blueprint" />
 	</web-item>
 
 

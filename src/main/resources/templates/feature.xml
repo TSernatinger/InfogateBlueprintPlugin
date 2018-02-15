@@ -63,7 +63,7 @@
 	<ac:placeholder>Bitte folgende Labels zur ContentReportTable hinzuf&uuml;gen:
 		<ul>
 			<li>Verwendete SpezInit-Schl&uuml;ssel (z.B. unlinkTel)</li>
-			<li>Fenster/UCs, in welchen dieses Feature verwendet wird</li>
+			<li>Forms/UCs, in welchen dieses Feature verwendet wird</li>
 		</ul>
 	</ac:placeholder>
 </p>

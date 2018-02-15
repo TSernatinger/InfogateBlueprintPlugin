@@ -61,13 +61,18 @@
 	<ac:parameter ac:name="linenumbers">true</ac:parameter>
 	<ac:parameter ac:name="collapse">true</ac:parameter>
 </ac:structured-macro>
-<h2>SpezInit</h2>
+<h1>Verwandte Artikel</h1>
 <p>
-	<ac:placeholder>Wurden SpezInit verwendet? Wenn ja, welche und warum. Kurze Beschreibung sollte reichen.</ac:placeholder>
-</p>
-<h2>UserControls</h2>
-<p>
-	<ac:placeholder>Verweise auf verwendete UserControls.&#013;&#010;
-					Die Beschreibung der UserControls selbst findet auf einer separaten Seite statt!
+	<ac:placeholder>Bitte folgende Labels zur ContentReportTable hinzuf&uuml;gen:
+		<ul>
+			<li>Verwendete SpezInit-Schl&uuml;ssel (z.B. unlinkTel)</li>
+			<li>Fenster/UCs, welches in diesem Fenster verwendet werden</li>
+			<li>Fenster, von welchen dieses Fenster aufgerufen wird</li>
+		</ul>
 	</ac:placeholder>
+</p>
+<p>
+	<ac:structured-macro ac:name="content-report-table" ac:schema-version="1" ac:macro-id="3773f884-21e6-4cc9-b95a-73a11c381adf">
+		<ac:parameter ac:name="labels"><at:var at:name="vFormClass"/></ac:parameter>
+	</ac:structured-macro>
 </p>

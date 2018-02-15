@@ -10,7 +10,6 @@
 	<!-- add our i18n resource -->
 	<resource type="i18n" name="i18n" location="simplebp"/>
 
-
 	<!-- Blueprint: TEST -->
 	<!-- add our web resources -->
 	<web-resource key="simplebp-resources" name="simplebp Web Resources">
@@ -35,19 +34,19 @@
 	</web-resource>
 
 	<!-- Template for Blueprint -->
-	<content-template key="simplebp-template" template-title-key="my.blueprint.title">
+	<content-template key="simplebp-template" i18n-name-key="my.blueprint.title">
 		<resource name="template" type="download" location="/templates/mytemplate.xml" />
-  		<!-- <context-provider class="infogate.plugins.confluence.blueprints.contextprovider.MyContextProvider"/> -->
+  		<!-- context-provider class="infogate.plugins.confluence.blueprints.contextprovider.MyContextProvider"/-->
 	</content-template>
 	
 	<!-- Second Template for Blueprint -->
-	<content-template key="simplebp-template2" template-title-key="my.blueprint.title2">
+	<content-template key="simplebp-template2" i18n-name-key="my.blueprint.title2">
 	    <resource name="template" type="download" location="/templates/mytemplate2.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
 	<!--blueprint key="my-blueprint" content-template-key="simplebp-template" index-key="my-index"-->
-	<blueprint key="my-blueprint" how-to-use-template="MyPlugin.Blueprints.Simple.letsGetStarted" index-key="my-index">
+	<blueprint key="my-blueprint" i18n-name-key="" how-to-use-template="MyPlugin.Blueprints.Simple.letsGetStarted" index-key="my-index">
 	    <content-template ref="simplebp-template" />
 	    <content-template ref="simplebp-template2" />
 		<dialog-wizard key="simplebp-wizard">
@@ -60,7 +59,7 @@
 	    </dialog-wizard>
 	</blueprint>
 	
-	<!--listener name="My Blueprint-Listener" key="myblueprintlistener" class="infogate.plugins.confluence.blueprints.listener.MyBlueprintListener"/-->
+	<listener name="My Blueprint-Listener" key="myblueprintlistener" class="infogate.plugins.confluence.blueprints.listener.MyBlueprintListener"/>
 
 	<!-- Add to the Create Menu -->
 	<web-item key="create-by-sample-template" i18n-name-key="my.create-link.title" section="system.create.dialog/content">
@@ -94,12 +93,13 @@
 	</web-resource>
 
 	<!-- Template for Blueprint -->
-	<content-template key="form-template" template-title-key="infogate.formblueprint.template.title">
+	<content-template key="form-template" i18n-name-key="infogate.formblueprint.template.title">
 		<resource name="template" type="download" location="/templates/form.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="form-blueprint" how-to-use-template="Infogate.Blueprints.Form.letsGetStarted" i18n-index-title-key="infogate.formblueprint.indextitle" index-key="form-blueprint-index">
+	<blueprint key="form-blueprint" i18n-name-key="" how-to-use-template="Infogate.Blueprints.Form.letsGetStarted"
+			   i18n-index-title-key="infogate.formblueprint.indextitle" index-key="form-blueprint-index">
 	    <content-template ref="form-template" />
 		<dialog-wizard key="form-wizard">
          	<dialog-page id="page1Id"
@@ -143,12 +143,13 @@
 	</web-resource>
 
 	<!-- Template for Blueprint -->
-	<content-template key="feature-template" template-title-key="infogate.featureblueprint.template.title">
+	<content-template key="feature-template" i18n-name-key="infogate.featureblueprint.template.title">
 		<resource name="template" type="download" location="/templates/feature.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="feature-blueprint" how-to-use-template="Infogate.Blueprints.Feature.letsGetStarted" i18n-index-title-key="infogate.featureblueprint.indextitle" index-key="feature-blueprint-index">
+	<blueprint key="feature-blueprint" i18n-name-key="" how-to-use-template="Infogate.Blueprints.Feature.letsGetStarted"
+			   i18n-index-title-key="infogate.featureblueprint.indextitle" index-key="feature-blueprint-index">
 	    <content-template ref="feature-template" />
 		<dialog-wizard key="feature-wizard">
          	<dialog-page id="page1Id"
@@ -192,12 +193,13 @@
 	</web-resource>
 
 	<!-- Template for Blueprint -->
-	<content-template key="utility-template" template-title-key="infogate.utilityblueprint.template.title">
+	<content-template key="utility-template" i18n-name-key="infogate.utilityblueprint.template.title">
 		<resource name="template" type="download" location="/templates/utility.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="utility-blueprint" how-to-use-template="Infogate.Blueprints.Utility.letsGetStarted" i18n-index-title-key="infogate.utilityblueprint.indextitle" index-key="utility-blueprint-index">
+	<blueprint key="utility-blueprint" i18n-name-key="" how-to-use-template="Infogate.Blueprints.Utility.letsGetStarted"
+			   i18n-index-title-key="infogate.utilityblueprint.indextitle" index-key="utility-blueprint-index">
 	    <content-template ref="utility-template" />
 		<dialog-wizard key="utility-wizard">
          	<dialog-page id="page1Id"

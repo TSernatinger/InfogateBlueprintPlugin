@@ -60,7 +60,7 @@
 	<!-- Add to the Create Menu -->
 	<web-item key="create-by-form-template" i18n-name-key="infogate.formblueprint.create-link.title" section="system.create.dialog/content">
 		<description key="infogate.formblueprint.create-link.description" />
-		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<resource name="icon" type="download" location="/images/form.png" />
 		<param name="blueprintKey" value="form-blueprint" />
 	</web-item>
 
@@ -80,6 +80,7 @@
     
 		<resource type="download" name="usercontrol.css" location="/css/usercontrol.css"/>
 		<resource type="download" name="usercontrol.js" location="/js/usercontrol.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="usercontrol.soy.js" location="/soy/usercontrol.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
@@ -110,7 +111,7 @@
 	<!-- Add to the Create Menu -->
 	<web-item key="create-by-usercontrol-template" i18n-name-key="infogate.usercontrolblueprint.create-link.title" section="system.create.dialog/content">
 		<description key="infogate.usercontrolblueprint.create-link.description" />
-		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<resource name="icon" type="download" location="/images/userControl.png" />
 		<param name="blueprintKey" value="usercontrol-blueprint" />
 	</web-item>
 
@@ -130,6 +131,7 @@
     
 		<resource type="download" name="feature.css" location="/css/feature.css"/>
 		<resource type="download" name="feature.js" location="/js/feature.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="feature.soy.js" location="/soy/feature.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
@@ -160,7 +162,7 @@
 	<!-- Add to the Create Menu -->
 	<web-item key="create-by-feature-template" i18n-name-key="infogate.featureblueprint.create-link.title" section="system.create.dialog/content">
 		<description key="infogate.featureblueprint.create-link.description" />
-		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<resource name="icon" type="download" location="/images/feature.png" />
 		<param name="blueprintKey" value="feature-blueprint" />
 	</web-item>
 
@@ -180,6 +182,7 @@
     
 		<resource type="download" name="utility.css" location="/css/utility.css"/>
 		<resource type="download" name="utility.js" location="/js/utility.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="utility.soy.js" location="/soy/utility.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
@@ -210,7 +213,7 @@
 	<!-- Add to the Create Menu -->
 	<web-item key="create-by-utility-template" i18n-name-key="infogate.utilityblueprint.create-link.title" section="system.create.dialog/content">
 		<description key="infogate.utilityblueprint.create-link.description" />
-		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<resource name="icon" type="download" location="/images/utility.png" />
 		<param name="blueprintKey" value="utility-blueprint" />
 	</web-item>
 </atlassian-plugin>

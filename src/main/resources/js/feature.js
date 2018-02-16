@@ -1,5 +1,5 @@
 Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.blueprintplugin:create-by-feature-template', function(wizard) {
-	wizard.on('submit.page1Id', function(e, state) {   
+	wizard.on('submit.page1Id', function(e, state) {
         var vFeatureName = state.pageData.vFeatureName;
         if (!vFeatureName) {
             alert('Bitte tragen Sie den Namen des Features ein.');
@@ -7,5 +7,6 @@ Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.bluepr
         }
         
         state.wizardData.title = vFeatureName;
+        state.pageData.vFeatureName = vFeatureName.replace(" ","_");
     });
 });

@@ -27,7 +27,6 @@ public class MyBlueprintListener {
 	protected static final String pluginKey = "infogate.plugins.confluence.blueprints.ig.blueprintplugin";
 	private static final HashSet<String> keys = new HashSet<String>(
 		Arrays.asList(
-			pluginKey + ":" + "my-blueprint",
 			pluginKey + ":" + "form-blueprint",
 			pluginKey + ":" + "usercontrol-blueprint",
 			pluginKey + ":" + "feature-blueprint",
@@ -75,6 +74,8 @@ public class MyBlueprintListener {
 			String title = page.getTitle().replace(' ', '_');
 			//log.warn("Add label: " + title);
 			labelManager.addLabel((Labelable) page, new Label(title));
+			Object vProject = event.getContext().get("vProject");
+			labelManager.addLabel((Labelable) page, new Label((String)vProject));
 		}
 	}
 }

@@ -1,4 +1,4 @@
-{namespace Infogate.Blueprints.UserControl}
+{namespace Infogate.Templates.UserControl}
 
 /**
  * Let's-get-started page for the Create dialog.
@@ -15,9 +15,11 @@
     <form action="#" method="post" class="aui">
       <fieldset>
         <div class="field-group">
-            <label for="vusercontrolclass">{getText('infogate.usercontrolblueprint.form.label.vUserControlClass')}</label>
-            <input id="vusercontrolclass" class="text" type="text" name="vUserControlClass">
+            <label for="usercontrolclass">{getText('infogate.usercontrolblueprint.form.label.vUserControlClass')}<span class="aui-icon icon-required">required</span></label>
+            <input id="usercontrolclass" class="text" type="text" name="vUserControlClass">
+    		<div class="description">{getText('infogate.usercontrolblueprint.form.label.vUserControlClass.description')}</div>
         </div>
+        {call Infogate.Templates.Projects.getFieldGroup /}
       </fieldset>
     </form>
 {/template}

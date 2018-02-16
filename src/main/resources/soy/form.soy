@@ -1,4 +1,4 @@
-{namespace Infogate.Blueprints.Form}
+{namespace Infogate.Templates.Form}
 
 /**
  * Let's-get-started page for the Create dialog.
@@ -15,9 +15,11 @@
     <form action="#" method="post" class="aui">
       <fieldset>
         <div class="field-group">
-            <label for="vformclass">{getText('infogate.formblueprint.form.label.vFormClass')}</label>
-            <input id="vformclass" class="text" type="text" name="vFormClass">
+            <label for="formclass">{getText('infogate.formblueprint.form.label.vFormClass')}<span class="aui-icon icon-required">required</span></label>
+            <input id="formclass" class="text" type="text" name="vFormClass">
+    		<div class="description">{getText('infogate.formblueprint.form.label.vFormClass.description')}</div>
         </div>
+        {call Infogate.Templates.Projects.getFieldGroup /}
       </fieldset>
     </form>
 {/template}

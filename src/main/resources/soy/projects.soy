@@ -1,0 +1,86 @@
+{namespace Infogate.Templates.Projects}
+
+/**
+*  Template for projects
+*/
+{template .getFieldGroup}
+    <div class="field-group">
+        <label for="project">{getText('infogate.blueprint.form.label.project')}<span class="aui-icon icon-required">required</span></label>
+        <select id="project" class="select" name="vProject">
+            <optgroup label="Allgemein">
+                <option>Globals</option>
+                <option>Import</option>
+                <option>InboxToDossier</option>
+                <option>InfogateCaption</option>
+                <option>InfogateCommon</option>
+                <option>InfogateHelp</option>
+                <option>InfogateSecurity</option>
+                <option>InfogateTermin</option>
+                <option>InfogateTools</option>
+                <option>OpenEyeAL</option>
+                <option>OpenEyeFD</option>
+                <option>OpenEyeIE</option>
+                <option>OpenEyeKO</option>
+                <option>OpenEyePD</option>
+                <option>OpenEyeRP</option>
+                <option>OpenEyeTU</option>
+                <option>OpenEyeZemis</option>
+                <option>SapEwk</option>
+                <option>XSDGenerator</option>
+            </optgroup>
+            <optgroup label="e-Case.Net">
+                <option>Belegung</option>
+                <option>Beobachtungsbogen</option>
+                <option>Connexia</option>
+                <option>eActinfo</option>
+                <option>ECase</option>
+                <option>ECaseCRMAbacus</option>
+                <option>eCaseFM</option>
+                <option>eCasePM</option>
+                <option>fecherFoundation</option>
+                <option>InfogateIA</option>
+                <option>InfogateScanning</option>
+                <option>Kursverwaltung</option>
+                <option>Leistungsvereinbarung</option>
+                <option>OpferhilfeStatistik</option>
+                <option>PersonalEinsatzPlanung</option>
+                <option>Praesenz</option>
+                <option>Schuldenberatung</option>
+                <option>VB6Simulator</option>
+            </optgroup>
+            <optgroup label="Tutoris.Net">
+                <option>Alimente</option>
+                <option>Asyl</option>
+                <option>BFFQA_Erfassung2008</option>
+                <option>BFMErfToolSG2010</option>
+                <option>BFMErfToolZH2012</option>
+                <option>Bfs</option>
+                <option>BjTerminplan</option>
+                <option>comwstl</option>
+                <option>Definitionen</option>
+                <option>Dossier</option>
+                <option>DtaErstellen</option>
+                <option>Export</option>
+                <option>Fallfuehrung</option>
+                <option>ImpAsylStart2008</option>
+                <option>Importasyl2008ZH</option>
+                <option>InfOffice</option>
+                <option>Konto</option>
+                <option>Kundenspez</option>
+                <option>Login</option>
+                <option>Modul</option>
+                <option>MT3.5</option>
+                <option>Objekt</option>
+                <option>Partner</option>
+                <option>RunTest</option>
+                <option>SadErstellen</option>
+                <option>StartupTutoris</option>
+                <option>string_d</option>
+                <option>Tutoris</option>
+                <option>WebService</option>
+                <option>Zahlungsverkehr</option>
+            </optgroup>
+        </select>
+    	<div class="description">{getText('infogate.blueprint.form.label.project.description')}</div>
+    </div>
+{/template}

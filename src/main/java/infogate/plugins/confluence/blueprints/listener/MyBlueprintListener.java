@@ -3,9 +3,12 @@ package infogate.plugins.confluence.blueprints.listener;
 import java.util.Arrays;
 import java.util.HashSet;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.inject.Inject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.atlassian.confluence.labels.Label;
@@ -41,12 +44,25 @@ public class MyBlueprintListener {
 	@ComponentImport
 	private LabelManager labelManager;
 
-	@Autowired
+	@Inject
 	public MyBlueprintListener(EventPublisher eventPublisher, LabelManager labelManager) {
 		this.eventPublisher = eventPublisher;
-		eventPublisher.register(this);
 		this.labelManager = labelManager;
 	}
+
+    @PostConstruct
+    public void init() {
+        // Called after the instance is created (when the plugin is started)
+    	//log.warn("init(): register " + this);
+        eventPublisher.register(this);
+    }
+
+    @PreDestroy
+    public void destroy() {
+        // Called just before the instance is destroyed (when the plugin is stopped)
+    	//log.warn("Destroy(): unregister " + this);
+        eventPublisher.unregister(this);
+    }
 
 	@EventListener
 	public void onBlueprintCreateEvent(BlueprintPageCreateEvent event) {
@@ -56,8 +72,9 @@ public class MyBlueprintListener {
 
 		if (keys.contains(moduleCompleteKey)) {
 			Page page = event.getPage();
-			//log.warn("Add label: " + page.getTitle());
-			labelManager.addLabel((Labelable) page, new Label(page.getTitle()));
+			String title = page.getTitle().replace(' ', '_');
+			//log.warn("Add label: " + title);
+			labelManager.addLabel((Labelable) page, new Label(title));
 		}
 	}
 }

@@ -29,8 +29,12 @@
     
 		<resource type="download" name="form.css" location="/css/form.css"/>
 		<resource type="download" name="form.js" location="/js/form.js"/>
-		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="form.soy.js" location="/soy/form.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
 		<context>ig.blueprintplugin</context>
@@ -80,8 +84,12 @@
     
 		<resource type="download" name="usercontrol.css" location="/css/usercontrol.css"/>
 		<resource type="download" name="usercontrol.js" location="/js/usercontrol.js"/>
-		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="usercontrol.soy.js" location="/soy/usercontrol.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
 		<context>ig.blueprintplugin</context>
@@ -131,8 +139,12 @@
     
 		<resource type="download" name="feature.css" location="/css/feature.css"/>
 		<resource type="download" name="feature.js" location="/js/feature.js"/>
-		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="feature.soy.js" location="/soy/feature.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
 		<context>ig.blueprintplugin</context>
@@ -182,8 +194,12 @@
     
 		<resource type="download" name="utility.css" location="/css/utility.css"/>
 		<resource type="download" name="utility.js" location="/js/utility.js"/>
-		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="utility.soy.js" location="/soy/utility.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 
 		<context>ig.blueprintplugin</context>

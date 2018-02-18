@@ -29,21 +29,17 @@
 		</ac:structured-macro>
 	</ac:rich-text-body>
 </ac:structured-macro>
+<h1>Beschreibung</h1>
 <p>
-	<span><ac:placeholder>Optional: Screenshot des UserControls als &Uuml;bersicht</ac:placeholder></span>
+	<ac:placeholder>Kurze Beschreibung des UserControls.</ac:placeholder>
+	<ac:placeholder>Optional: Screenshot des UserControls als &Uuml;bersicht</ac:placeholder>
 </p>
 <h1>Anforderungen</h1>
 <p>
 	<ac:placeholder>Hier k&ouml;nnen beliebig viele Anforderungen definiert werden.</ac:placeholder>
+	<ac:placeholder>Bei Bedarf k&ouml;nnen die folgenden Anforderungen noch weiter unterteilt werden, z.B. in technische und funktionale Anforderungen.</ac:placeholder>
 </p>
-<h2>Anforderung 1</h2>
-<p>
-	<ac:placeholder>Beschreibung der Anforderung.</ac:placeholder>
-</p>
-<h2>Anforderung 2</h2>
-<p>
-	<ac:placeholder>Beschreibung der Anforderung.</ac:placeholder>
-</p>
+<at:var at:name="vRequirements" at:rawxhtml="true"/>
 <hr />
 <h1>Konzept</h1>
 <p>

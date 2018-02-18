@@ -71,11 +71,16 @@ public class MyBlueprintListener {
 
 		if (keys.contains(moduleCompleteKey)) {
 			Page page = event.getPage();
-			String title = page.getTitle().replace(' ', '_');
+			
+			// Add page title as label. DEPRECATED
+			//String title = page.getTitle().replace(' ', '_');
+			//labelManager.addLabel((Labelable) page, new Label(title));
 			//log.warn("Add label: " + title);
-			labelManager.addLabel((Labelable) page, new Label(title));
+			
+			// Add project as label
 			Object vProject = event.getContext().get("vProject");
 			labelManager.addLabel((Labelable) page, new Label((String)vProject));
+			//log.warn("Add label: " + vProject);
 		}
 	}
 }

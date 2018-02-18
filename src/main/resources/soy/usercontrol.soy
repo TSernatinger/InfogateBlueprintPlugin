@@ -14,12 +14,18 @@
 {template .page1Form}
     <form action="#" method="post" class="aui">
       <fieldset>
+      	// UserControl class
         <div class="field-group">
             <label for="usercontrolclass">{getText('infogate.usercontrolblueprint.form.label.vUserControlClass')}<span class="aui-icon icon-required">required</span></label>
             <input id="usercontrolclass" class="text" type="text" name="vUserControlClass">
     		<div class="description">{getText('infogate.usercontrolblueprint.form.label.vUserControlClass.description')}</div>
         </div>
+        
+        // Projects
         {call Infogate.Templates.Projects.getFieldGroup /}
+        
+        // Requirements
+        {call Infogate.Templates.Requirements.getFieldGroup /}
       </fieldset>
     </form>
 {/template}

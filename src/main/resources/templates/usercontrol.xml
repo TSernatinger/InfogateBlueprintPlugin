@@ -4,10 +4,6 @@
 <p><ac:placeholder>- SpezInit-Schl&uuml;ssel, welche eine Auswirkung auf die Funktionsweise haben.</ac:placeholder></p>
 <p><ac:placeholder>- UserContols, welche in diesem UserControl verwendet werden.</ac:placeholder></p>
 
-<p>
-	<strong>Projekt:</strong> <at:var at:name="vProject"/>
-</p>
-
 <ac:structured-macro ac:name="section" ac:schema-version="1" ac:macro-id="4e0b4370-a1f3-424e-bd52-0e642d8be8c8">
 	<ac:rich-text-body>
 		<ac:structured-macro ac:name="column" ac:schema-version="1" ac:macro-id="39c88fff-4796-45d5-8ac0-b7718e5b217d">
@@ -45,10 +41,8 @@
 <hr />
 
 <h1>Anforderungen</h1>
-<p>
-	<ac:placeholder>Hier k&ouml;nnen beliebig viele Anforderungen definiert werden.</ac:placeholder>
-	<ac:placeholder>Bei Bedarf k&ouml;nnen die folgenden Anforderungen noch weiter unterteilt werden, z.B. in technische und funktionale Anforderungen.</ac:placeholder>
-</p>
+<p><ac:placeholder>Hier k&ouml;nnen beliebig viele Anforderungen definiert werden.</ac:placeholder></p>
+<p><ac:placeholder>Bei Bedarf k&ouml;nnen die folgenden Anforderungen noch weiter unterteilt werden, z.B. in technische und funktionale Anforderungen.</ac:placeholder></p>
 <at:var at:name="vRequirements" at:rawxhtml="true"/>
 <hr />
 

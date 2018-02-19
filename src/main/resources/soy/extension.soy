@@ -1,0 +1,28 @@
+{namespace Infogate.Templates.Extension}
+
+/**
+ * Let's-get-started page for the Create dialog.
+ */
+{template .letsGetStarted}
+    <h2>{getText('infogate.extensionblueprint.letsgetstarted.title')}</h2>
+    <p>{getText('infogate.extensionblueprint.letsgetstarted.content')}</p>
+{/template}
+
+/**
+*  A form for Page 1
+*/
+{template .page1Form}
+    <form action="#" method="post" class="aui">
+      <fieldset>
+      	// Form class
+        <div class="field-group">
+            <label for="extensionclass">{getText('infogate.extensionblueprint.form.label.vExtensionClass')}<span class="aui-icon icon-required">required</span></label>
+            <input id="extensionclass" class="text" type="text" name="vExtensionClass">
+    		<div class="description">{getText('infogate.extensionblueprint.form.label.vExtensionClass.description')}</div>
+        </div>
+        
+        // Projects
+        {call Infogate.Templates.Projects.getFieldGroup /}
+      </fieldset>
+    </form>
+{/template}

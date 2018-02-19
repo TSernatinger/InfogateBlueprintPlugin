@@ -44,7 +44,7 @@
 
 	<!-- Template for Blueprint -->
 	<content-template key="form-template" i18n-name-key="infogate.formblueprint.template.title">
-		<resource name="template" type="download" location="/templates/form.xml" />
+		<resource type="download" name="template" location="/templates/form.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
@@ -99,7 +99,7 @@
 
 	<!-- Template for Blueprint -->
 	<content-template key="usercontrol-template" i18n-name-key="infogate.usercontrolblueprint.template.title">
-		<resource name="template" type="download" location="/templates/usercontrol.xml" />
+		<resource type="download" name="template" location="/templates/usercontrol.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
@@ -154,7 +154,7 @@
 
 	<!-- Template for Blueprint -->
 	<content-template key="feature-template" i18n-name-key="infogate.featureblueprint.template.title">
-		<resource name="template" type="download" location="/templates/feature.xml" />
+		<resource type="download" name="template" location="/templates/feature.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
@@ -209,7 +209,7 @@
 
 	<!-- Template for Blueprint -->
 	<content-template key="utility-template" i18n-name-key="infogate.utilityblueprint.template.title">
-		<resource name="template" type="download" location="/templates/utility.xml" />
+		<resource type="download" name="template" location="/templates/utility.xml" />
 	</content-template>
 
 	<!-- Blueprint -->
@@ -231,5 +231,59 @@
 		<description key="infogate.utilityblueprint.create-link.description" />
 		<resource name="icon" type="download" location="/images/utility.png" />
 		<param name="blueprintKey" value="utility-blueprint" />
+	</web-item>
+
+
+	<!-- Blueprint: Extension -->
+	<!-- add our web resources -->
+	<web-resource key="extension-resources" name="Extension: Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="extension.css" location="/css/extension.css"/>
+		<resource type="download" name="extension.js" location="/js/extension.js"/>
+		<resource type="download" name="extension.soy.js" location="/soy/extension.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="extension-template" i18n-name-key="infogate.extensionblueprint.template.title">
+		<resource type="download" name="template" location="/templates/extension.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="extension-blueprint" i18n-name-key="infogate.extensionblueprint.title" how-to-use-template="Infogate.Templates.Extension.letsGetStarted"
+			   i18n-index-title-key="infogate.extensionblueprint.indextitle" index-key="extension">
+	    <content-template ref="extension-template" />
+		<dialog-wizard key="extension-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Templates.Extension.page1Form"
+						 title-key="infogate.extensionblueprint.wizard.page1.title"
+						 description-header-key="infogate.extensionblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.extensionblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-extension-template" i18n-name-key="infogate.extensionblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.extensionblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/extension.png" />
+		<param name="blueprintKey" value="extension-blueprint" />
 	</web-item>
 </atlassian-plugin>

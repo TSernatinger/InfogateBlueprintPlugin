@@ -286,4 +286,57 @@
 		<resource name="icon" type="download" location="/images/extension.png" />
 		<param name="blueprintKey" value="extension-blueprint" />
 	</web-item>
+
+
+	<!-- Blueprint: SpezInit -->
+	<!-- add our web resources -->
+	<web-resource key="spezinit-resources" name="SpezInit Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="spezinit.css" location="/css/spezinit.css"/>
+		<resource type="download" name="spezinit.js" location="/js/spezinit.js"/>
+		<resource type="download" name="spezinit.soy.js" location="/soy/spezinit.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="spezinit-template" i18n-name-key="infogate.spezinitblueprint.template.title">
+		<resource type="download" name="template" location="/templates/spezinit.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="spezinit-blueprint" i18n-name-key="infogate.spezinitblueprint.title" how-to-use-template="Infogate.Templates.SpezInit.letsGetStarted"
+			   i18n-index-title-key="infogate.spezinitblueprint.indextitle" index-key="spezinit">
+	    <content-template ref="spezinit-template" />
+		<dialog-wizard key="spezinit-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Templates.SpezInit.page1Form"
+						 title-key="infogate.spezinitblueprint.wizard.page1.title"
+						 description-header-key="infogate.spezinitblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.spezinitblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-spezinit-template" i18n-name-key="infogate.spezinitblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.spezinitblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/key.png" />
+		<param name="blueprintKey" value="spezinit-blueprint" />
+	</web-item>
 </atlassian-plugin>

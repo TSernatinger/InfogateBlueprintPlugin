@@ -1,0 +1,44 @@
+{namespace Infogate.Templates.SpezInit}
+
+/**
+ * Let's-get-started page for the Create dialog.
+ */
+{template .letsGetStarted}
+    <h2>{getText('infogate.spezinitblueprint.letsgetstarted.title')}</h2>
+    <p>{getText('infogate.spezinitblueprint.letsgetstarted.content')}</p>
+{/template}
+
+/**
+*  A form for Page 1
+*/
+{template .page1Form}
+    <form action="#" method="post" class="aui">
+      <fieldset>
+      	// SpezInit name
+        <div class="field-group">
+            <label for="spezinitname">{getText('infogate.spezinitblueprint.form.label.vSpezInitName')}<span class="aui-icon icon-required">required</span></label>
+            <input id="spezinitname" class="text" type="text" name="vSpezInitName">
+    		<div class="description">{getText('infogate.spezinitblueprint.form.label.vSpezInitName.description')}</div>
+        </div>
+        
+        // Parameters
+        <div class="field-group">
+		    <label for="parameters">{getText('infogate.spezinitblueprint.form.label.vParameters')}<span class="aui-icon icon-required">required</span></label>
+		    <select id="parameters" class="select" name="vParameters">
+		    	<option>0</option>
+		    	<option>1</option>
+		    	<option>2</option>
+		    	<option>3</option>
+		    	<option>4</option>
+		    	<option>5</option>
+		    	<option>6</option>
+		    	<option>7</option>
+		    	<option>8</option>
+		    	<option>9</option>
+		    	<option>10</option>
+			</select>
+			<div class="description">{getText('infogate.spezinitblueprint.form.label.vParameters.description')}</div>
+		</div>
+      </fieldset>
+    </form>
+{/template}

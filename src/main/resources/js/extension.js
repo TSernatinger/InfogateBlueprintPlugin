@@ -6,7 +6,7 @@ Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.bluepr
 			alert('Bitte tragen Sie den Klassennamen der Extension ein.');
 			return false;
 		}
-		// Use the form class name as the page title.
+		// Use the extension class name as the page title.
 		state.wizardData.title = vExtensionClass;
 		state.pageData.vExtensionClass = vExtensionClass.replace(new RegExp(" ", "g"),"_");
     });

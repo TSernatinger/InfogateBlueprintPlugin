@@ -48,7 +48,7 @@
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="form-blueprint" i18n-name-key="" how-to-use-template="Infogate.Templates.Form.letsGetStarted"
+	<blueprint key="form-blueprint" i18n-name-key="infogate.formblueprint.title" how-to-use-template="Infogate.Templates.Form.letsGetStarted"
 			   i18n-index-title-key="infogate.formblueprint.indextitle" index-key="form">
 	    <content-template ref="form-template" />
 		<dialog-wizard key="form-wizard">
@@ -103,7 +103,7 @@
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="usercontrol-blueprint" i18n-name-key="" how-to-use-template="Infogate.Templates.UserControl.letsGetStarted"
+	<blueprint key="usercontrol-blueprint" i18n-name-key="infogate.usercontrolblueprint.title" how-to-use-template="Infogate.Templates.UserControl.letsGetStarted"
 			   i18n-index-title-key="infogate.usercontrolblueprint.indextitle" index-key="usercontrol">
 	    <content-template ref="usercontrol-template" />
 		<dialog-wizard key="usercontrol-wizard">
@@ -158,7 +158,7 @@
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="feature-blueprint" i18n-name-key="" how-to-use-template="Infogate.Templates.Feature.letsGetStarted"
+	<blueprint key="feature-blueprint" i18n-name-key="infogate.featureblueprint.title" how-to-use-template="Infogate.Templates.Feature.letsGetStarted"
 			   i18n-index-title-key="infogate.featureblueprint.indextitle" index-key="feature">
 	    <content-template ref="feature-template" />
 		<dialog-wizard key="feature-wizard">
@@ -213,7 +213,7 @@
 	</content-template>
 
 	<!-- Blueprint -->
-	<blueprint key="utility-blueprint" i18n-name-key="" how-to-use-template="Infogate.Templates.Utility.letsGetStarted"
+	<blueprint key="utility-blueprint" i18n-name-key="infogate.utilityblueprint.title" how-to-use-template="Infogate.Templates.Utility.letsGetStarted"
 			   i18n-index-title-key="infogate.utilityblueprint.indextitle" index-key="utility">
 	    <content-template ref="utility-template" />
 		<dialog-wizard key="utility-wizard">

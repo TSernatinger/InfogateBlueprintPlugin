@@ -8,7 +8,7 @@ Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.bluepr
 		}
 		// Use the feature name as the page title.
 		state.wizardData.title = vFeatureName;
-		state.pageData.vFeatureName = vFeatureName.replace(" ","_");
+		state.pageData.vFeatureName = vFeatureName.replace(new RegExp(" ", "g"),"_");
 		
 		// ----- Requirements -----
 		// Get selected number of requirements.

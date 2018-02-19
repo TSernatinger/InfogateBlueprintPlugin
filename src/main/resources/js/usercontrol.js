@@ -8,7 +8,7 @@ Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.bluepr
 		}
 		// Use the usercontrol class name as the page title.
 		state.wizardData.title = vUserControlClass;
-		state.pageData.vUserControlClass = vUserControlClass.replace(" ","_");
+		state.pageData.vUserControlClass = vUserControlClass.replace(new RegExp(" ", "g"),"_");
 		
 		// ----- Requirements -----
 		// Get selected number of requirements.

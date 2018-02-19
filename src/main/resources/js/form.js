@@ -8,7 +8,7 @@ Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.bluepr
 		}
 		// Use the form class name as the page title.
 		state.wizardData.title = vFormClass;
-		state.pageData.vFormClass = vFormClass.replace(" ","_");
+		state.pageData.vFormClass = vFormClass.replace(new RegExp(" ", "g"),"_");
 		
 		// ----- Requirements -----
 		// Get selected number of requirements.

@@ -8,7 +8,7 @@ Confluence.Blueprint.setWizard('infogate.plugins.confluence.blueprints.ig.bluepr
 		}
 		// Use the utility class name as the page title.
 		state.wizardData.title = vUtilityClass;
-		state.pageData.vUtilityClass = vUtilityClass.replace(" ","_");
+		state.pageData.vUtilityClass = vUtilityClass.replace(new RegExp(" ", "g"),"_");
 		
 		// ----- Requirements -----
 		// Get selected number of requirements.

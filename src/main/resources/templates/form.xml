@@ -42,6 +42,22 @@
 	<ac:placeholder>Kurze Beschreibung des Forms.</ac:placeholder>
 	<ac:placeholder>Optional: Screenshot des Forms als &Uuml;bersicht</ac:placeholder>
 </p>
+
+<h2>Men&uuml;s</h2>
+<p><ac:placeholder>&Uuml;ber welche Men&uuml;s kann das Form ge&ouml;ffnet werden?</ac:placeholder></p>
+<p><ac:placeholder>M&uuml;ssen hierf&uuml;r bestimmte Bedingungen eingehalten werden (z.B. SpezInit-Schl&uuml;ssel, Benutzerrechte, Module, etc.)?</ac:placeholder></p>
+
+<h3><ac:placeholder>e-Case.Net</ac:placeholder></h3>
+<p><ac:placeholder>Aufrufpfade des Forms in e-Case.Net.</ac:placeholder></p>
+<p><ac:placeholder>Beispiele:</ac:placeholder></p>
+<p><ac:placeholder>- FM&nbsp;&rarr; Verwaltung&nbsp;&rarr; Systemverwaltung</ac:placeholder></p>
+<p><ac:placeholder>- FM&nbsp;&rarr; Datei&nbsp;&rarr; Objektsuche (Das zugeh&ouml;rige Benutzerrecht muss gesetzt sein)</ac:placeholder></p>
+
+<h3><ac:placeholder>Tutoris.Net</ac:placeholder></h3>
+<p><ac:placeholder>Aufrufpfade des Forms in Tutoris.Net.</ac:placeholder></p>
+<p><ac:placeholder>Beispiele:</ac:placeholder></p>
+<p><ac:placeholder> - PartnerIn&nbsp;&rarr; Partner&uuml;bersicht</ac:placeholder></p>
+<p><ac:placeholder> - Extras &rarr; Zgb Objektimport&nbsp;(Der SpezInit-Schl&uuml;ssel 'ZgbObjektExportImport' muss auf 1 gesetzt sein)</ac:placeholder></p>
 <hr />
 
 <h1>Anforderungen</h1>

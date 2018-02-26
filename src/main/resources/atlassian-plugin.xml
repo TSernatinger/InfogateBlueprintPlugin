@@ -143,7 +143,6 @@
 		
 		<!-- General Resources -->
 		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
-		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
 		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
 		<resource type="download" name="images/" location="/images"/>
 

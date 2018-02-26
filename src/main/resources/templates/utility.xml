@@ -2,6 +2,7 @@
 <p><ac:placeholder>Das Projekt und der Typ (Utility) werden beim Speichern der Seite automatisch als Labels hinzugef&uuml;gt.</ac:placeholder></p>
 <p><ac:placeholder>Bitte folgende Labels manuell hinzuf&uuml;gen:</ac:placeholder></p>
 <p><ac:placeholder>- SpezInit-Schl&uuml;ssel, welche eine Auswirkung auf die Funktionsweise haben.</ac:placeholder></p>
+<p><ac:placeholder>- Klassen/Utilities, welche von dieser Utility verwendet werden.</ac:placeholder></p>
 
 <ac:structured-macro ac:name="section" ac:schema-version="1" ac:macro-id="4e0b4370-a1f3-424e-bd52-0e642d8be8c8">
 	<ac:rich-text-body>
@@ -49,17 +50,15 @@
 <hr />
 
 <h1>Methoden</h1>
-<p>
-	<ac:placeholder>Dokumentation von wichtigen Methoden.</ac:placeholder>
-</p>
+<p><ac:placeholder>Dokumentation von wichtigen Methoden.</ac:placeholder></p>
 <p>
 	<ac:placeholder>Optional: Ggf. die Verwendung der Utility anhand von kurzen Code Snippets verdeutlichen. Nicht die Implementierung der Methoden kopieren!</ac:placeholder>
+	<ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="4297eac1-1445-415e-8ae6-2d6144e1c437">
+		<ac:parameter ac:name="language">c#</ac:parameter>
+		<ac:parameter ac:name="linenumbers">true</ac:parameter>
+		<ac:parameter ac:name="collapse">true</ac:parameter>
+	</ac:structured-macro>
 </p>
-<ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="4297eac1-1445-415e-8ae6-2d6144e1c437">
-	<ac:parameter ac:name="language">c#</ac:parameter>
-	<ac:parameter ac:name="linenumbers">true</ac:parameter>
-	<ac:parameter ac:name="collapse">true</ac:parameter>
-</ac:structured-macro>
 <hr />
 
 <h1>Verwandte Artikel</h1>

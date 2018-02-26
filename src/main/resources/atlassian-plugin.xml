@@ -14,6 +14,60 @@
 	<listener name="My Blueprint-Listener" key="myblueprintlistener" class="infogate.plugins.confluence.blueprints.listener.MyBlueprintListener"/>
 
 
+	<!-- Blueprint: Feature -->
+	<!-- add our web resources -->
+	<web-resource key="feature-resources" name="Feature: Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="feature.css" location="/css/feature.css"/>
+		<resource type="download" name="feature.js" location="/js/feature.js"/>
+		<resource type="download" name="feature.soy.js" location="/soy/feature.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="feature-template" i18n-name-key="infogate.featureblueprint.template.title">
+		<resource type="download" name="template" location="/templates/feature.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="feature-blueprint" i18n-name-key="infogate.featureblueprint.title" how-to-use-template="Infogate.Templates.Feature.letsGetStarted"
+			   i18n-index-title-key="infogate.featureblueprint.indextitle" index-key="feature">
+	    <content-template ref="feature-template" />
+		<dialog-wizard key="feature-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Templates.Feature.page1Form"
+						 title-key="infogate.featureblueprint.wizard.page1.title"
+						 description-header-key="infogate.featureblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.featureblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-feature-template" i18n-name-key="infogate.featureblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.featureblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/feature.png" />
+		<param name="blueprintKey" value="feature-blueprint" />
+	</web-item>
+
+
 	<!-- Blueprint: Form -->
 	<!-- add our web resources -->
 	<web-resource key="form-resources" name="Form: Web Resources">
@@ -121,60 +175,6 @@
 		<description key="infogate.usercontrolblueprint.create-link.description" />
 		<resource name="icon" type="download" location="/images/userControl.png" />
 		<param name="blueprintKey" value="usercontrol-blueprint" />
-	</web-item>
-
-
-	<!-- Blueprint: Feature -->
-	<!-- add our web resources -->
-	<web-resource key="feature-resources" name="Feature: Web Resources">
-		<dependency>com.atlassian.auiplugin:ajs</dependency>
-		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
-
-		<transformation extension="soy">
-	        <transformer key="soyTransformer">
-	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
-	            </functions>
-	        </transformer>
-	    </transformation>
-    
-		<resource type="download" name="feature.css" location="/css/feature.css"/>
-		<resource type="download" name="feature.js" location="/js/feature.js"/>
-		<resource type="download" name="feature.soy.js" location="/soy/feature.soy"/>
-		
-		<!-- General Resources -->
-		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
-		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
-		<resource type="download" name="images/" location="/images"/>
-
-		<context>ig.blueprintplugin</context>
-    	<context>atl.general</context>
-    	<context>atl.admin</context>
-	</web-resource>
-
-	<!-- Template for Blueprint -->
-	<content-template key="feature-template" i18n-name-key="infogate.featureblueprint.template.title">
-		<resource type="download" name="template" location="/templates/feature.xml" />
-	</content-template>
-
-	<!-- Blueprint -->
-	<blueprint key="feature-blueprint" i18n-name-key="infogate.featureblueprint.title" how-to-use-template="Infogate.Templates.Feature.letsGetStarted"
-			   i18n-index-title-key="infogate.featureblueprint.indextitle" index-key="feature">
-	    <content-template ref="feature-template" />
-		<dialog-wizard key="feature-wizard">
-         	<dialog-page id="page1Id"
-						 template-key="Infogate.Templates.Feature.page1Form"
-						 title-key="infogate.featureblueprint.wizard.page1.title"
-						 description-header-key="infogate.featureblueprint.wizard.page1.desc.header"
-						 description-content-key="infogate.featureblueprint.wizard.page1.desc.content"
-						 last="true"/>
-	    </dialog-wizard>
-	</blueprint>
-
-	<!-- Add to the Create Menu -->
-	<web-item key="create-by-feature-template" i18n-name-key="infogate.featureblueprint.create-link.title" section="system.create.dialog/content">
-		<description key="infogate.featureblueprint.create-link.description" />
-		<resource name="icon" type="download" location="/images/feature.png" />
-		<param name="blueprintKey" value="feature-blueprint" />
 	</web-item>
 
 
@@ -337,5 +337,60 @@
 		<description key="infogate.spezinitblueprint.create-link.description" />
 		<resource name="icon" type="download" location="/images/key.png" />
 		<param name="blueprintKey" value="spezinit-blueprint" />
+	</web-item>
+
+
+	<!-- Blueprint: Class -->
+	<!-- add our web resources -->
+	<web-resource key="class-resources" name="Class Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="class.css" location="/css/class.css"/>
+		<resource type="download" name="class.js" location="/js/class.js"/>
+		<resource type="download" name="class.soy.js" location="/soy/class.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="class-template" i18n-name-key="infogate.classblueprint.template.title">
+		<resource type="download" name="template" location="/templates/class.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="class-blueprint" i18n-name-key="infogate.classblueprint.title" how-to-use-template="Infogate.Templates.Class.letsGetStarted"
+			   i18n-index-title-key="infogate.classblueprint.indextitle" index-key="class">
+	    <content-template ref="class-template" />
+		<dialog-wizard key="class-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Templates.Class.page1Form"
+						 title-key="infogate.classblueprint.wizard.page1.title"
+						 description-header-key="infogate.classblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.classblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-class-template" i18n-name-key="infogate.classblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.classblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/class.png" />
+		<param name="blueprintKey" value="class-blueprint" />
 	</web-item>
 </atlassian-plugin>

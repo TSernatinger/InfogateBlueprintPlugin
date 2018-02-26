@@ -1,0 +1,66 @@
+<p><ac:placeholder><strong>Labels:</strong></ac:placeholder></p>
+<p><ac:placeholder>Das Projekt und der Typ (Class) werden beim Speichern der Seite automatisch als Labels hinzugef&uuml;gt.</ac:placeholder></p>
+<p><ac:placeholder>Bitte folgende Labels manuell hinzuf&uuml;gen:</ac:placeholder></p>
+<p><ac:placeholder>- SpezInit-Schl&uuml;ssel, welche eine Auswirkung auf die Funktionsweise haben.</ac:placeholder></p>
+
+<ac:structured-macro ac:name="section" ac:schema-version="1" ac:macro-id="4e0b4370-a1f3-424e-bd52-0e642d8be8c8">
+	<ac:rich-text-body>
+		<h1 class="auto-cursor-target">Inhaltsverzeichnis</h1>
+		<ac:structured-macro ac:name="column" ac:schema-version="1" ac:macro-id="39c88fff-4796-45d5-8ac0-b7718e5b217d">
+			<ac:parameter ac:name="width">50%</ac:parameter>
+			<ac:rich-text-body>
+				<p>
+					<ac:structured-macro ac:name="toc" ac:schema-version="1" ac:macro-id="110d1eb8-870b-4ccb-ad25-b6a76da7e40c">
+						<ac:parameter ac:name="maxLevel">4</ac:parameter>
+						<ac:parameter ac:name="outline">true</ac:parameter>
+						<ac:parameter ac:name="exclude">Inhaltsverzeichnis</ac:parameter>
+					</ac:structured-macro>
+				</p>
+			</ac:rich-text-body>
+		</ac:structured-macro>
+		<ac:structured-macro ac:name="column" ac:schema-version="1" ac:macro-id="8b2c6439-51e9-4a1d-85c8-dd0241e1e150">
+			<ac:parameter ac:name="width">50%</ac:parameter>
+			<ac:rich-text-body>
+				<p><ac:placeholder>Jira Vorg&auml;nge mit Hilfe des Filters ausw&auml;hlen</ac:placeholder></p>
+				<p><ac:placeholder>Falls es keinen passenden Vorgang gibt &rarr; Jira Makro l&ouml;schen!</ac:placeholder></p>
+				<p>
+					<ac:structured-macro ac:name="jira" ac:schema-version="1" ac:macro-id="53dea4b4-99d9-471b-a255-ff55563792cd">
+						<ac:parameter ac:name="server">Infogate</ac:parameter>
+						<ac:parameter ac:name="columns">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter>
+						<ac:parameter ac:name="serverId">98611999-0db4-3cfd-af7f-0319ccbe5c74</ac:parameter>
+						<ac:parameter ac:name="key"></ac:parameter>
+					</ac:structured-macro>
+				</p>
+			</ac:rich-text-body>
+		</ac:structured-macro>
+	</ac:rich-text-body>
+</ac:structured-macro>
+
+<h1>Beschreibung</h1>
+<p>
+	<ac:placeholder>Kurze Beschreibung der Klasse.</ac:placeholder>
+</p>
+<hr />
+
+<h1>Methoden</h1>
+<p><ac:placeholder>Dokumentation von wichtigen Methoden.</ac:placeholder></p>
+<p><ac:placeholder>Nicht jede Methode beschreiben, das hier ist keine API Dokumentation!</ac:placeholder></p>
+<p>
+	<ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="4297eac1-1445-415e-8ae6-2d6144e1c437">
+		<ac:placeholder>F&uuml;r Codebeispiele bitte einen Codeblock verwenden.</ac:placeholder>
+		<ac:parameter ac:name="language">c#</ac:parameter>
+		<ac:parameter ac:name="linenumbers">true</ac:parameter>
+		<ac:parameter ac:name="collapse">true</ac:parameter>
+	</ac:structured-macro>
+</p>
+<hr />
+
+<h1>Verwandte Artikel</h1>
+<p><ac:placeholder>Der Name der Klasse wird automatisch als Label in das ContentReportTable-Makro eingetragen.</ac:placeholder></p>
+<p><ac:placeholder>Weitere Labels m&uuml;ssen in der Regel nicht hinzugef&uuml;gt werden.</ac:placeholder></p>
+<p><ac:placeholder>Alle Seiten, welche diese Klasse verwenden, m&uuml;ssen dies durch Hinzufügen des Labels entsprechend kennzeichnen.</ac:placeholder></p>
+<p>
+	<ac:structured-macro ac:name="content-report-table" ac:schema-version="1" ac:macro-id="3773f884-21e6-4cc9-b95a-73a11c381adf">
+		<ac:parameter ac:name="labels"><at:var at:name="vClassName"/></ac:parameter>
+	</ac:structured-macro>
+</p>

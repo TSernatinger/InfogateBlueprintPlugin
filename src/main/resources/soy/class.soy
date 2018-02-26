@@ -1,0 +1,28 @@
+{namespace Infogate.Templates.Class}
+
+/**
+ * Let's-get-started page for the Create dialog.
+ */
+{template .letsGetStarted}
+    <h2>{getText('infogate.classblueprint.letsgetstarted.title')}</h2>
+    <p>{getText('infogate.classblueprint.letsgetstarted.content')}</p>
+{/template}
+
+/**
+*  A form for Page 1
+*/
+{template .page1Form}
+    <form action="#" method="post" class="aui">
+      <fieldset>
+      	// Class name
+        <div class="field-group">
+            <label for="classname">{getText('infogate.classblueprint.form.label.vClassName')}<span class="aui-icon icon-required">required</span></label>
+            <input id="classname" class="text" type="text" name="vClassName">
+    		<div class="description">{getText('infogate.classblueprint.form.label.vClassName.description')}</div>
+        </div>
+        
+        // Projects
+        {call Infogate.Templates.Projects.getFieldGroup /}
+      </fieldset>
+    </form>
+{/template}

@@ -29,6 +29,7 @@ public class MyBlueprintListener {
 		Arrays.asList(
 			pluginKey + ":" + "form-blueprint",
 			pluginKey + ":" + "usercontrol-blueprint",
+			pluginKey + ":" + "control-blueprint",
 			pluginKey + ":" + "utility-blueprint",
 			pluginKey + ":" + "extension-blueprint",
 			pluginKey + ":" + "class-blueprint"

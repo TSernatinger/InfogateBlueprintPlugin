@@ -178,6 +178,61 @@
 	</web-item>
 
 
+	<!-- Blueprint: Control -->
+	<!-- add our web resources -->
+	<web-resource key="control-resources" name="Control: Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:resources</dependency>
+
+		<transformation extension="soy">
+	        <transformer key="soyTransformer">
+	            <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+	            </functions>
+	        </transformer>
+	    </transformation>
+    
+		<resource type="download" name="control.css" location="/css/control.css"/>
+		<resource type="download" name="control.js" location="/js/control.js"/>
+		<resource type="download" name="control.soy.js" location="/soy/control.soy"/>
+		
+		<!-- General Resources -->
+		<resource type="download" name="wizardutil.js" location="/js/wizardutil.js"/>
+		<resource type="download" name="projects.soy.js" location="/soy/projects.soy"/>
+		<resource type="download" name="requirements.soy.js" location="/soy/requirements.soy"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>ig.blueprintplugin</context>
+    	<context>atl.general</context>
+    	<context>atl.admin</context>
+	</web-resource>
+
+	<!-- Template for Blueprint -->
+	<content-template key="control-template" i18n-name-key="infogate.controlblueprint.template.title">
+		<resource type="download" name="template" location="/templates/control.xml" />
+	</content-template>
+
+	<!-- Blueprint -->
+	<blueprint key="control-blueprint" i18n-name-key="infogate.controlblueprint.title" how-to-use-template="Infogate.Templates.Control.letsGetStarted"
+			   i18n-index-title-key="infogate.controlblueprint.indextitle" index-key="control">
+	    <content-template ref="control-template" />
+		<dialog-wizard key="control-wizard">
+         	<dialog-page id="page1Id"
+						 template-key="Infogate.Templates.Control.page1Form"
+						 title-key="infogate.controlblueprint.wizard.page1.title"
+						 description-header-key="infogate.controlblueprint.wizard.page1.desc.header"
+						 description-content-key="infogate.controlblueprint.wizard.page1.desc.content"
+						 last="true"/>
+	    </dialog-wizard>
+	</blueprint>
+
+	<!-- Add to the Create Menu -->
+	<web-item key="create-by-control-template" i18n-name-key="infogate.controlblueprint.create-link.title" section="system.create.dialog/content">
+		<description key="infogate.controlblueprint.create-link.description" />
+		<resource name="icon" type="download" location="/images/control.png" />
+		<param name="blueprintKey" value="control-blueprint" />
+	</web-item>
+
+
 	<!-- Blueprint: Utility -->
 	<!-- add our web resources -->
 	<web-resource key="utility-resources" name="Utility: Web Resources">

@@ -1,7 +1,7 @@
 <p><ac:placeholder><strong>Labels:</strong></ac:placeholder></p>
 <p><ac:placeholder>Das Projekt und der Typ (Feature) werden beim Speichern der Seite automatisch als Labels hinzugef&uuml;gt.</ac:placeholder></p>
 <p><ac:placeholder>Bitte folgende Labels manuell hinzuf&uuml;gen:</ac:placeholder></p>
-<p><ac:placeholder>- Forms/UserContols, welche zu diesem Feature gehören.</ac:placeholder></p>
+<p><ac:placeholder>- Forms/UserControls, welche zu diesem Feature gehören.</ac:placeholder></p>
 <p><ac:placeholder>- Klassen/Utilities, welche zu diesem Feature gehören.</ac:placeholder></p>
 
 <ac:structured-macro ac:name="section" ac:schema-version="1" ac:macro-id="4e0b4370-a1f3-424e-bd52-0e642d8be8c8">

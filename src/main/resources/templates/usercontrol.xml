@@ -1,7 +1,7 @@
 <p><ac:placeholder><strong>Labels:</strong></ac:placeholder></p>
 <p><ac:placeholder>Das Projekt und der Typ (UserControl) werden beim Speichern der Seite automatisch als Labels hinzugef&uuml;gt.</ac:placeholder></p>
 <p><ac:placeholder>Bitte folgende Labels manuell hinzuf&uuml;gen:</ac:placeholder></p>
-<p><ac:placeholder>- UserControls, welche in diesem UserControl verwendet werden.</ac:placeholder></p>
+<p><ac:placeholder>- UserControls/Controls, welche in diesem UserControl verwendet werden.</ac:placeholder></p>
 <p><ac:placeholder>- Klassen/Utilities, welche von diesem UserControl verwendet werden.</ac:placeholder></p>
 <p><ac:placeholder>- Extensions, welche von diesem UserControl verwendet werden.</ac:placeholder></p>
 <p><ac:placeholder>- SpezInit-Schl&uuml;ssel, welche eine Auswirkung auf die Funktionsweise haben.</ac:placeholder></p>

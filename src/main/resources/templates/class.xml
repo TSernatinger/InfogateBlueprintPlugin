@@ -58,6 +58,17 @@
 </p>
 <hr />
 
+<h1>Links</h1>
+<p><ac:placeholder>Links bitte mit dem Verknüpfungs-Makro erstellen.</ac:placeholder></p>
+<p><ac:placeholder>Bei Bedarf können diese in nachfolgende Gruppen unterteilt werden.</ac:placeholder></p>
+<h2><ac:placeholder>Intern</ac:placeholder></h2>
+<p><ac:placeholder>Links auf interne Seiten, z.B: Jira, Confluence.</ac:placeholder></p>
+<h2><ac:placeholder>Extern</ac:placeholder></h2>
+<p><ac:placeholder>Links auf externe Seiten, z.B: Spezifikationen, Stack Overflow.</ac:placeholder></p>
+<h2><ac:placeholder>Dateien</ac:placeholder></h2>
+<p><ac:placeholder>Links auf Dateien und Ordner auf unseren Servern/Laufwerken.</ac:placeholder></p>
+<hr />
+
 <h1>Verwandte Artikel</h1>
 <p><ac:placeholder>Der Name der Klasse wird automatisch als Label in das ContentReportTable-Makro eingetragen.</ac:placeholder></p>
 <p><ac:placeholder>Weitere Labels m&uuml;ssen in der Regel nicht hinzugef&uuml;gt werden.</ac:placeholder></p>
